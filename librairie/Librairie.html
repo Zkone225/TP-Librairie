@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>Ranger</span> (
+    <span class='foreign primary'>Id_theme</span>,
+    <span class='foreign primary'>Id_Ra</span>
+  )
+</div>
+<div>
+  <span class='relation'>Rayon</span> (
+    <span class='primary'>Id_Ra</span>,
+    <span class='normal'>Libelle_Ra</span>
+  )
+</div>
+<div>
+  <span class='relation'>Commander</span> (
+    <span class='foreign primary'>Id_li</span>,
+    <span class='foreign primary'>Id_vente</span>,
+    <span class='normal'>qte</span>,
+    <span class='normal'>prix-unit</span>
+  )
+</div>
+<div>
+  <span class='relation'>vente</span> (
+    <span class='primary'>Id_vente</span>,
+    <span class='normal'>Num_vente</span>,
+    <span class='normal'>Date-vente</span>,
+    <span class='normal'>qte_vente</span>,
+    <span class='normal'>mode_de_paiement</span>,
+    <span class='foreign'>Id_Ut</span>
+  )
+</div>
+<div>
+  <span class='relation'>Theme</span> (
+    <span class='primary'>Id_theme</span>,
+    <span class='normal'>Libelle_theme</span>
+  )
+</div>
+<div>
+  <span class='relation'>Livre</span> (
+    <span class='primary'>Id_li</span>,
+    <span class='normal'>Titre_li</span>,
+    <span class='normal'>Ss_titre_li</span>,
+    <span class='normal'>date_pub_li</span>,
+    <span class='normal'>Resume_li</span>,
+    <span class='normal'>Num_isbn</span>,
+    <span class='normal'>prix_li</span>,
+    <span class='foreign'>Id_Ra</span>
+  )
+</div>
+<div>
+  <span class='relation'>Utilisateur</span> (
+    <span class='primary'>Id_Ut</span>,
+    <span class='normal'>Nom_Ut</span>,
+    <span class='normal'>Prenom_Ut</span>,
+    <span class='normal'>adresse_Ut</span>,
+    <span class='normal'>Cp_Ut</span>,
+    <span class='normal'>Ville_Ut</span>,
+    <span class='normal'>email_Ut</span>,
+    <span class='normal'>mdp_Ut</span>,
+    <span class='normal'>Type_Ut</span>
+  )
+</div>
+<div>
+  <span class='relation'>Auteur</span> (
+    <span class='primary'>Id_auteur</span>,
+    <span class='normal'>Nom_auteur</span>,
+    <span class='normal'>Prenom_auteur</span>,
+    <span class='normal'>Pays_auteur</span>,
+    <span class='normal'>Ville_auteur</span>
+  )
+</div>
+<div>
+  <span class='relation'>Ecrir</span> (
+    <span class='foreign primary'>Id_auteur</span>,
+    <span class='foreign primary'>Id_li</span>
+  )
+</div>
+<div>
+  <span class='relation'>Publier</span> (
+    <span class='foreign primary'>Id_li</span>,
+    <span class='foreign primary'>Id_editeur</span>
+  )
+</div>
+<div>
+  <span class='relation'>Commentaire</span> (
+    <span class='primary'>Id_com</span>,
+    <span class='normal'>Libelle_com</span>,
+    <span class='normal'>note_com</span>,
+    <span class='foreign'>Id_li</span>,
+    <span class='foreign'>Id_Ut</span>
+  )
+</div>
+<div>
+  <span class='relation'>Editer</span> (
+    <span class='foreign primary'>Id_editeur</span>,
+    <span class='foreign primary'>Id_auteur</span>,
+    <span class='normal'>Contrat.edition</span>
+  )
+</div>
+<div>
+  <span class='relation'>Editeur</span> (
+    <span class='primary'>Id_editeur</span>,
+    <span class='normal'>Nom_editeur</span>,
+    <span class='normal'>Pays_editeur</span>
+  )
+</div>
+</div>
+</body>
+</html>

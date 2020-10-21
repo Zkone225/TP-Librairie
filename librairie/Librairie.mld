@@ -1,0 +1,37 @@
+%%mocodo
+:
+Ranger: #Id_theme->Theme->Id_theme, _#Id_Ra->Rayon->Id_Ra
+:
+Rayon: Id_Ra, Libelle_Ra
+:
+Commander: #Id_li->Livre->Id_li, _#Id_vente->vente->Id_vente, qte, prix-unit
+:
+vente: Id_vente, Num_vente, Date-vente, qte_vente, mode_de_paiement, #Id_Ut->Utilisateur->Id_Ut
+:::
+
+
+:
+Theme: Id_theme, Libelle_theme
+:::
+Livre: Id_li, Titre_li, Ss_titre_li, date_pub_li, Resume_li, Num_isbn, prix_li, #Id_Ra->Rayon->Id_Ra
+:::
+Utilisateur: Id_Ut, Nom_Ut, Prenom_Ut, adresse_Ut, Cp_Ut, Ville_Ut, email_Ut, mdp_Ut, Type_Ut
+:
+
+
+:
+Auteur: Id_auteur, Nom_auteur, Prenom_auteur, Pays_auteur, Ville_auteur
+:
+Ecrir: #Id_auteur->Auteur->Id_auteur, _#Id_li->Livre->Id_li
+:
+Publier: #Id_li->Livre->Id_li, _#Id_editeur->Editeur->Id_editeur
+:
+Commentaire: Id_com, Libelle_com, note_com, #Id_li->Livre->Id_li, #Id_Ut->Utilisateur->Id_Ut
+:::
+
+
+:::
+Editer: #Id_editeur->Editeur->Id_editeur, _#Id_auteur->Auteur->Id_auteur, Contrat.edition
+:
+Editeur: Id_editeur, Nom_editeur, Pays_editeur
+:::::

@@ -1,0 +1,22 @@
+Ranger, 1N Theme, 1N Rayon
+Rayon: Id_Ra, Libelle_Ra
+Commander, 0N Livre, 1N vente: qte, prix-unit
+vente: Id_vente, Num_vente, Date-vente, qte_vente, mode_de_paiement
+Acheter, 1N Utilisateur, 11 vente
+
+Theme: Id_theme, Libelle_theme
+Placer, 11 Livre, 1N Rayon
+Livre: Id_li, Titre_li, Ss_titre_li, date_pub_li, Resume_li, Num_isbn, prix_li
+Evaluer, 11 Commentaire, 1N Livre
+Utilisateur: Id_Ut, Nom_Ut, Prenom_Ut, adresse_Ut, Cp_Ut, Ville_Ut, email_Ut, mdp_Ut, Type_Ut
+
+Auteur: Id_auteur, Nom_auteur, Prenom_auteur, Pays_auteur, Ville_auteur
+Ecrir, 1N Auteur, 0N Livre
+Publier, 1N Livre, 1N Editeur
+Commentaire: Id_com, Libelle_com, note_com
+Commenter, 11 Commentaire, 0N Utilisateur
+
+:
+Editer, 1N Editeur, 1N Auteur: Contrat.edition
+Editeur: Id_editeur, Nom_editeur, Pays_editeur
+::
