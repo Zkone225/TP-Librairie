@@ -6,7 +6,7 @@ Rayon: Id_Ra, Libelle_Ra
 :
 Commander: #Id_li->Livre->Id_li, _#Id_vente->vente->Id_vente, id_cmd, qte, prix-unit
 :
-vente: Id_vente, Num_vente, Date-vente, qte_vente, mode_de_paiement, #Id_Ut->Utilisateur->Id_Ut
+vente: Id_vente, Num_vente, Date-vente, qte_vente, montant_vente, mode_de_paiement, #Id_Ut->Utilisateur->Id_Ut
 :::
 
 
@@ -30,8 +30,8 @@ Commentaire: Id_com, Libelle_com, note_com, #Id_li->Livre->Id_li, #Id_Ut->Utilis
 :::
 
 
-:::
+:::::
 Editer: #Id_editeur->Editeur->Id_editeur, _#Id_auteur->Auteur->Id_auteur, Contrat.edition
 :
 Editeur: Id_editeur, Nom_editeur, Pays_editeur
-:::::
+:::

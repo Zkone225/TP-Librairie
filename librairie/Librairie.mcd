@@ -1,7 +1,7 @@
 Ranger, 1N Theme, 1N Rayon
 Rayon: Id_Ra, Libelle_Ra
 Commander, 0N Livre, 1N vente:id_cmd, qte, prix-unit
-vente: Id_vente, Num_vente, Date-vente, qte_vente, mode_de_paiement
+vente: Id_vente, Num_vente, Date-vente, qte_vente,montant_vente, mode_de_paiement
 Acheter, 1N Utilisateur, 11 vente
 
 Theme: Id_theme, Libelle_theme
@@ -19,4 +19,3 @@ Commenter, 11 Commentaire, 0N Utilisateur
 :
 Editer, 1N Editeur, 1N Auteur: Contrat.edition
 Editeur: Id_editeur, Nom_editeur, Pays_editeur
-::
