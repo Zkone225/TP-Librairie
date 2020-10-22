@@ -4,7 +4,7 @@ Ranger: #Id_theme->Theme->Id_theme, _#Id_Ra->Rayon->Id_Ra
 :
 Rayon: Id_Ra, Libelle_Ra
 :
-Commander: #Id_li->Livre->Id_li, _#Id_vente->vente->Id_vente, qte, prix-unit
+Commander: #Id_li->Livre->Id_li, _#Id_vente->vente->Id_vente, id_cmd, qte, prix-unit
 :
 vente: Id_vente, Num_vente, Date-vente, qte_vente, mode_de_paiement, #Id_Ut->Utilisateur->Id_Ut
 :::

@@ -1,6 +1,6 @@
 Ranger, 1N Theme, 1N Rayon
 Rayon: Id_Ra, Libelle_Ra
-Commander, 0N Livre, 1N vente: qte, prix-unit
+Commander, 0N Livre, 1N vente:id_cmd, qte, prix-unit
 vente: Id_vente, Num_vente, Date-vente, qte_vente, mode_de_paiement
 Acheter, 1N Utilisateur, 11 vente
 
