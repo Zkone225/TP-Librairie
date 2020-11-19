@@ -1,0 +1,20 @@
+%%mocodo
+:
+adresse: id, numero, voie, cp, ville
+:::
+categorie: id, nom, description, #id.1->categorie->id
+:::
+
+
+:::
+commande: id, dateCommande, total, #id.1->adresse->id, #id.2->user->id
+:::
+produit: id, nom, photo, description, prix, #id.1->categorie->id
+:
+
+
+:
+user: id, prenom, email, mdp
+:::
+ligneCommande: id, qte, prixUnitaire, #id.1->commande->id, #id.2->produit->id
+:::

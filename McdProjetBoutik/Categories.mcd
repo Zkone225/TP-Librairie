@@ -1,0 +1,14 @@
+adresse:id,numero,voie,cp,ville
+contenir,0n categorie,01 categorie
+categorie:id,nom,description
+appartenir,01 produit,0n categorie
+
+destiner, 11 commande, 1n adresse
+commande:id,dateCommande,total
+inclure, 11 ligneCommande, 1n commande
+produit:id,nom,photo,description,prix
+
+user:id,prenom,email,mdp
+passer,11 commande, 01 user
+ligneCommande:id,qte,prixUnitaire
+posseder, 11 ligneCommande ,01 produit

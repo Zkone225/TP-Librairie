@@ -1,0 +1,6 @@
+adresse (_id_, numero, voie, cp, ville)
+categorie (_id_, nom, description, #id.1)
+commande (_id_, dateCommande, total, #id.1, #id.2)
+produit (_id_, nom, photo, description, prix, #id.1)
+user (_id_, prenom, email, mdp)
+ligneCommande (_id_, qte, prixUnitaire, #id.1, #id.2)

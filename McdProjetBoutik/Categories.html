@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<div>
+  <span class='relation'>adresse</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>numero</span>,
+    <span class='normal'>voie</span>,
+    <span class='normal'>cp</span>,
+    <span class='normal'>ville</span>
+  )
+</div>
+<div>
+  <span class='relation'>categorie</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>nom</span>,
+    <span class='normal'>description</span>,
+    <span class='foreign'>id.1</span>
+  )
+</div>
+<div>
+  <span class='relation'>commande</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>dateCommande</span>,
+    <span class='normal'>total</span>,
+    <span class='foreign'>id.1</span>,
+    <span class='foreign'>id.2</span>
+  )
+</div>
+<div>
+  <span class='relation'>produit</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>nom</span>,
+    <span class='normal'>photo</span>,
+    <span class='normal'>description</span>,
+    <span class='normal'>prix</span>,
+    <span class='foreign'>id.1</span>
+  )
+</div>
+<div>
+  <span class='relation'>user</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>prenom</span>,
+    <span class='normal'>email</span>,
+    <span class='normal'>mdp</span>
+  )
+</div>
+<div>
+  <span class='relation'>ligneCommande</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>qte</span>,
+    <span class='normal'>prixUnitaire</span>,
+    <span class='foreign'>id.1</span>,
+    <span class='foreign'>id.2</span>
+  )
+</div>
+</div>
+</body>
+</html>
